@@ -3,7 +3,7 @@ hw-02 - Static Webpage
 
 Link to GitHub Pages: [https://ds4200-s23-class.github.io/hw-02-perrotta-patel/]
 
-Clone this repo and work locally. Be sure to push the final version of your code (and any significant updates along the way) before submitting. 
+Clone this repo and work locally. Be sure to push the final version of your code (and any significant updates along the way) before submitting.
 
 ## Purpose
 
