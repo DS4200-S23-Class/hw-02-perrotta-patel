@@ -40,3 +40,9 @@ h3 {
     display: flex;
     align-self: center;
 }
+
+#images {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
