@@ -3,106 +3,138 @@
 
 <link rel="stylesheet" href="style.css">
 
+<!-- Title of the webpage -->
 <head>
-    <meta charset=utf-8/>
-    <title>hw-02</title>
+    <meta charset=utf-8/>
+    <title>hw-02</title>
 </head>
 
+<!-- Body of the webpage, consisting of the different elements creating the webpage  -->
 <body>
 
+<!-- Creation of the table that holds the 3 data files and associated information -->
 <div id = 'data abstraction'>
-    <div class = "info">
-        <h1>Dataset Types</h1>
-        <table>
-            <tr>
-                <th>Data</th>
-                <th>Link</th>
-                <th>Dataset Type</th>
-            </tr>
-            <tr>
-                <td>Airports.csv</td>
-                    <td><a href="data/Airports.csv">link</a></td>
-                    <td>Table</td>
-            </tr>
-            <tr>
-                <td>Google-Web.txt</td>
-                    <td><a href="data/Google-Web.txt">link</a></td> 
-                    <td>Network</td>
-            </tr>
-            <tr>
-                <td>UFO.csv</td>
-                    <td><a href="data/UFO.csv">link</a></td> 
-                    <td>Table</td>
-            </tr>
-        </table>
-    </div>
+    <div class = "info">
+        <h1>Dataset Types</h1>
+        <table>
+            <tr>
+                <th>Data</th>
+                <th>Link</th>
+                <th>Dataset Type</th>
+            </tr>
+            <tr>
+                <td>Airports.csv</td>
+                    <td><a href="data/Airports.csv">link</a></td>
+                    <td>Table</td>
+            </tr>
+            <tr>
+                <td>Google-Web.txt</td>
+                    <td><a href="data/Google-Web.txt">link</a></td> 
+                    <td>Network</td>
+            </tr>
+            <tr>
+                <td>UFO.csv</td>
+                    <td><a href="data/UFO.csv">link</a></td> 
+                    <td>Table</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Classification of items within each data file -->
+    <div class = 'info'>
+        <h1>Data Types</h1>
+            <h3>UFO</h3>
+            <ul>
+                <li>Columns' Data Type: Attributes</li>
+                    <ul><li>Datetime: Sequential</li></ul>
+                    <ul><li>City: Catagorical</li></ul>
+                    <ul><li>State: Catagorical</li></ul>
+                    <ul><li>Country: Catagorical</li></ul>
+                    <ul><li>Shape: Catagorical</li></ul>
+                    <ul><li>Duration (seconds): Sequential</li></ul>
+                <li>Rows' Data Type: Items</li>
+            </ul>
+            <h3>Airports</h3>
+            <ul>
+                <li>Columns' Data Type: Attributes</li>
+                    <ul><li>Airport_Name: Catagorical</li></ul>
+                    <ul><li>Latitude: Position</li></ul>
+                    <ul><li>Longtitude: Position</li></ul>
+                <li>Rows' Data Type: Items</li>
+            </ul>
+            <h3>Google-Web</h3>
+            <ul>
+                <li>Columns' Data Type: Attributes</li>
+                    <ul><li>FromNodeID: Catagorical</li></ul>
+                    <ul><li>ToNodeID: Catagorical</li></ul>
+                <li>Rows' Data Type: Links</li>
+            </ul>
+    </div>
 
-    <div class = 'info'>
-        <h1>Data Types</h1>
-            <h3>UFO</h3>
-            <ul>
-                <li>Columns' Data Type: Attributes</li>
-                    <ul><li>Datetime: Sequential</li></ul>
-                    <ul><li>City: Catagorical</li></ul>
-                    <ul><li>State: Catagorical</li></ul>
-                    <ul><li>Country: Catagorical</li></ul>
-                    <ul><li>Shape: Catagorical</li></ul>
-                    <ul><li>Duration (seconds): Sequential</li></ul>
-                <li>Rows' Data Type: Items</li>
-            </ul>
-            <h3>Airports</h3>
-            <ul>
-                <li>Columns' Data Type: Attributes</li>
-                    <ul><li>Airport_Name: Catagorical</li></ul>
-                    <ul><li>Latitude: Position</li></ul>
-                    <ul><li>Longtitude: Position</li></ul>
-                <li>Rows' Data Type: Items</li>
-            </ul>
-            <h3>Google-Web</h3>
-            <ul>
-                <li>Columns' Data Type: Attributes</li>
-                    <ul><li>FromNodeID: Catagorical</li></ul>
-                    <ul><li>ToNodeID: Catagorical</li></ul>
-                <li>Rows' Data Type: Links</li>
-            </ul>
-    </div>
+    <!-- Data images and associated analysis regarding image data -->
+    <div id = 'task-abstraction'>
+        <h1>Task Abstraction</h1>
+    </div>
+    <div id="image-holder">
+        <div class="writing">
+            <div class="image">
+                <img src="img/vis1.png" alt="Vancouver Temps">
+            </div>
+            <h4>High-level task:</h4>
+            <h4>Mid-level task:</h4>
+            <h4>Low-level task:</h4>
+            <h4>Target:</h4>
+        </div>
+        <div class="writing">
+            <div class="image">
+                <img src="img/vis2.png" alt="Seattle & Portland">
+            </div>
+            <h4>High-level task:</h4>
+            <h4>Mid-level task:</h4>
+            <h4>Low-level task:</h4>
+            <h4>Target:</h4>
+        </div>
+    </div>
 
-    <div id = 'task-abstraction'>
-        <h1>Task Abstraction</h1>
-    </div>
-    <div id="image-holder">
-        <div class="writing">
-            <div class="image">
-                <img src="img/vis1.png" alt="Vancouver Temps">
-            </div>
-            Insert Writing
-        </div>
-        <div class="writing">
-            <div class="image">
-                <img src="img/vis2.png" alt="Seattle & Portland">
-            </div>
-            Insert Writing
-        </div>
-    </div>
+    <!-- Creation of circles and rectangles -->
+    <div class="decoration">
+        <svg width=100 height=100>
+            <circle cx="50" cy="50" r="40"/>
+        </svg>
+        <svg width=100 height=100>
+            <rect x="10" y="10" width="75" height="75"/>
+        </svg>
+        <svg width=100 height=100>
+            <circle cx="50" cy="50" r="40"/>
+        </svg>
+        <svg width=100 height=100>
+            <rect x="10" y="10" width="75" height="75"/>
+        </svg>
+        <svg width=100 height=100>
+            <circle cx="50" cy="50" r="40"/>
+        </svg>
+    </div>
+    
+</div>
 
-    <div class="decoration">
-        <svg width=100 height=100>
-            <circle cx="50" cy="50" r="40"/>
-        </svg>
-        <svg width=100 height=100>
-            <rect x="10" y="10" width="75" height="75"/>
-        </svg>
-        <svg width=100 height=100>
-            <circle cx="50" cy="50" r="40"/>
-        </svg>
-        <svg width=100 height=100>
-            <rect x="10" y="10" width="75" height="75"/>
-        </svg>
-        <svg width=100 height=100>
-            <circle cx="50" cy="50" r="40"/>
-        </svg>
-    </div>
-    
+<!-- Acknowledge section to credit any sources used for the completion of this assignment -->
+<div>
+    <h2>Acknowledgements</h2>
+    <div>
+        <ul>
+            <li>
+                https://www.w3schools.com/html/html_headings.asp
+            </li>
+            <li>
+                https://www.geeksforgeeks.org/html-layout/?ref=lbp
+            </li>
+            <li>
+                https://www.w3schools.com/css/default.asp
+            </li>
+            <li>
+                https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-basics-and-terminology
+            </li>
+        </ul>
+    </div>
 </div>
 
 </body>
