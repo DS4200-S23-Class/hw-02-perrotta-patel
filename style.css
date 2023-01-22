@@ -1,21 +1,25 @@
-
+/* Setting all body text to be of Arial font*/
 body {
     font-family: Arial;
 }
 
+/* Alignment of table headers */
 th {
     background-color: rgb(36, 170, 200);
     text-align: center;
 }
 
+/* Alignment of table rows  */
 tr {
     text-align: center; 
 }
 
+/* Bordering of the table */
 td {
     border: 1px solid black;
 }
 
+/* Design elemnents of the data table */
 table {
     border: 1px solid;
     margin-left: auto;
@@ -24,45 +28,63 @@ table {
     width: 90%;
 }
 
+/* Alignment of header 1 */
 h1 {
     text-align: center;
 }
 
+/* Alignment of header 2 */
 h2 {
     text-align: center;
 }
 
+/* Alignment of header 3 */
 h3 {
     text-align: left;
 }
 
+/* Creation of 2 columns to store the image and associated text */
 #image-holder {
     display: flex;
     flex-direction: row;
 }
 
+/* Alignment of text to the center with respect to the image */
 .image {
     text-align: center;
 }
 
+/* Image sizing within the columns */
 img {
-    width: 50%;
+    width: 100%;
+    height: auto;
 }
 
+/* Display mechanics of the circle and rectangles */
 .decoration {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
 }
 
+/* Circle design */
 circle {
     opacity: 50%;
 }
 
+/* Rectable design */
 rect {
     outline: 3px solid pink;
 }
 
+/* Adds a border to circle when hovered over */
 circle:hover {
-    fill:rgb(36, 170, 200);
+    stroke: orange;
+    stroke-width: 3px;
+    stroke-opacity: 100%;
+}
+
+/* Changes the color of rectangle when hoevered over */
+rect:hover {
+    fill: rgb(36, 170, 200);
 }
