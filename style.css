@@ -5,27 +5,28 @@ body {
 
 /* Alignment of table headers */
 th {
-    background-color: rgb(36, 170, 200);
+    background-color: rgb(150, 200, 275);
     text-align: center;
 }
 
 /* Alignment of table rows  */
 tr {
     text-align: center; 
+    border-bottom: 1px solid black;
 }
 
 /* Bordering of the table */
 td {
-    border: 1px solid black;
+    text-align: center; 
 }
 
 /* Design elemnents of the data table */
 table {
-    border: 1px solid;
     margin-left: auto;
     margin-right: auto;
     height: 90%;
     width: 90%;
+    border-collapse: collapse;
 }
 
 /* Alignment of header 1 */
